@@ -3,7 +3,7 @@
 A simple component that can be used to implement drag-to-scroll functionality. Scrolling can be done along the horizontal axis, vertical axis or both.
 
 ## Example
-![Demo](https://demo "Demo")
+![Demo](https://raw.githubusercontent.com/SimonVall00/react-scrollbox/main/demo/demo.gif "Demo")
 
 ```typescript
 function randomColor(): string {
