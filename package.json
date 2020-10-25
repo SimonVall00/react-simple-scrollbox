@@ -32,7 +32,7 @@
   "author": "Simon Vall",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SimonVall00/react-scrollbox"
+    "url": "https://github.com/SimonVall00/react-simple-scrollbox"
   },
   "module": "dist/react-simple-scrollbox.esm.js",
   "size-limit": [
