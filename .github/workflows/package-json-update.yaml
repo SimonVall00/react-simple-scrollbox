@@ -1,1 +1,22 @@
-
+on:
+  schedule:
+  - cron: 0 0 * * 3
+name: Update
+jobs:
+  package-update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Set remote url
+      run: git remote set-url --push origin https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+    - name: Package update
+      uses: taichi/actions-package-update@master
+      env:
+        AUTHOR_EMAIL: SimonVall00@protonmail.ch
+        AUTHOR_NAME: Simon Vall
+        EXECUTE: "true"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        LOG_LEVEL: debug
+        UPDATE_COMMAND: npm
+      with:
+        args: -u --packageFile package.json --loglevel verbose
