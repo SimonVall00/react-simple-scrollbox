@@ -28,16 +28,20 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-scrollbox",
+  "name": "react-simple-scrollbox",
   "author": "Simon Vall",
-  "module": "dist/react-scrollbox.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonVall00/react-scrollbox"
+  },
+  "module": "dist/react-simple-scrollbox.esm.js",
   "size-limit": [
     {
-      "path": "dist/react-scrollbox.cjs.production.min.js",
+      "path": "dist/react-simple-scrollbox.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/react-scrollbox.esm.js",
+      "path": "dist/react-simple-scrollbox.esm.js",
       "limit": "10 KB"
     }
   ],
